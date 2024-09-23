@@ -5,7 +5,7 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: "Hello {{course | default('Ansible') }}"
+      msg: "Hello {{course | default('Ansible') }}" #| default('Ansible') is a default value when variable is not defined
 #ansible is defined value in the above line
 
 #you can also define the output in upper case also

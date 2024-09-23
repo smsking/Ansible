@@ -1,6 +1,7 @@
 - name: check number
   hosts: localhost
-  vars_prompt: #prompts are always considered as text/string
+  vars_prompt: #prompts are always considered as text/string 
+  #prompt refers it has to print in the command line ans ask the given prompt
   - name: number
     prompt: please enter number
     private: no
@@ -8,7 +9,8 @@
   - name: number is less than 10
     ansible.builtin.debug:
       msg: "Given number {{number}} is less than 10"
-    when: number | int < 10
+    when: number | int < 10 #| int is a filter it convert prompt string in to number int
+    #if you any text in the command line it consider as 0
 
   - name: number is greater than or equal to 10
     ansible.builtin.debug:

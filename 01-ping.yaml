@@ -2,4 +2,8 @@
   hosts: web
   tasks: #list of tasks/modules/collections are same
   - name: pinging the server
-    ansible.builtin.ping:
+    ansible.builtin.ping: # its module it can change according to our requirement
+  # ansible.builtin.dnf for to install any server
+  # ansible.builtin.service for to start and enable any server
+  # ansible.builtin.debug for to to print the message given
+  # ansible.builtin.command for to run the command in the given below

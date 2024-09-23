@@ -8,6 +8,6 @@
       name: "{{ item.name }}"
       state: "{{ item.state }}"
     loop:
-    - { name: 'mysql', state: 'latest'} # item
-    - { name: 'nginx', state: 'absent'}
+    - { name: 'mysql', state: 'latest'} # state latest means to install 
+    - { name: 'nginx', state: 'absent'} # state absent means to uninstall
     - { name: 'postfix', state: 'absent'}
