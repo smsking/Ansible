@@ -7,3 +7,4 @@
   # ansible.builtin.service for to start and enable any server
   # ansible.builtin.debug for to to print the message given
   # ansible.builtin.command for to run the command in the given below
+  # ansible.builtin.pip for to install the libraries
